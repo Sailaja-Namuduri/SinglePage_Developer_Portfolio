@@ -7,82 +7,198 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Single-page developer portfolio</title>
+  <style>
+    
+    body{
+      margin: 0px;
+      /*display: grid;
+      grid-auto-rows: auto;
+      grid-auto-columns: 100vw;
+      */
+      padding: 0;
+      border: 1px solid brown;
+    }
+    .wrapper{
+      /*display: grid;
+      */
+    }
+    .header{
+      border: 2px solid rgb(14, 226, 209);
+      background: black;
+      margin: 0px 100px;
+      padding:0px 0px;
+      position: relative;
+      display: grid;
+      word-break: break-all;
+      grid-template-columns: 900px 100px ;
+      grid-template-rows: 50px;
+    
+    }
+    .header-name{
+      border: 1px solid rgb(210, 101, 50);
+      color: white;
+      grid-row: 1/2;
+      grid-column: 1/8;
+    }
+    .header-logos{
+     border: 1px solid fuchsia;
+     grid-row: 1/4;
+     grid-column: 7/11;
+     display: grid;
+     grid-template-columns: subgrid;
+     grid-template-rows: auto;
+     
+    }
+    .header-logos>img{
+      grid-row: 1/4;
+      grid-column: 1/12;
+    }
+    .header-logos>.github{
+      
+      grid-row: 1;
+      grid-column: 4/5;
+    }
+    .header-logos>.frontend{
+      grid-row: 1;
+      grid-column: 6/7;
+    }
+    .header-logos>.linkedin{
+      grid-row: 1;
+      grid-column: 8/9;
+    }
+    .header-logos>.twitter{
+      grid-row: 1;
+      grid-column: 10/11;
+    }
+    .header-nicetomeetyou{
+      border: 1px solid crimson;
+      color: white;
+      grid-row: 2/3;
+      grid-column: 1/9;
+    }
+    .header-contactme{
+      border: 1px solid mediumvioletred;
+      color: white;
+      grid-row: 3/4;
+      grid-column: 1/9;
+    }
+    body>div>main{
+      border: 1px dashed greenyellow;
+      grid-area: 1/7/span 1/span 8;
+    }
+    body>div>footer{
+      border: 1px solid blueviolet;
+    }
+   
+  </style>
 </head>
 <body>
-
-  adamkeyes
-
-  Nice to meet you! I'm Adam Keyes.
-
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
-
-  Contact me
-
-  HTML
-  4 Years Experience
-
-  CSS
-  4 Years Experience
-
-  JavaScript
-  4 Years Experience
-
-  Accessibility
-  4 Years Experience
-
-  React
-  3 Years Experience
-
-  Sass
-  3 Years Experience
-
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
+  <div class="wrapper">
+    
+      
+      <div class="header">
+        <div class="header-name"><b>adamkeyes</b></div>
+        <div class="header-logos" >
+          <img src="./assets/images/image-profile-desktop.webp" height="450px" width="300px"/>
+          <img class="github" src="./assets/images/icon-github.svg"/>
+          <img class="frontend" src="./assets/images/icon-frontend-mentor.svg"/>
+          <img class="linkedin" src="./assets/images/icon-linkedin.svg"/>
+          <img class="twitter" src="./assets/images/icon-twitter.svg"/>
+        </div>
+        <div class="header-nicetomeetyou">
+          <div>Nice to meet you! I'm Adam Keyes.</div>
+          <div>Based in the UK, I'm a front-end developer passionate about 
+            building accessible web apps that users love.</div>
+        </div>
+        <div class="header-contactme">Contact Me</div>
+      </div>
+    
+    
+      <div class="skills">
+        <div>
+          <div>HTML</div>
+          <div>4 Years Experience</div>
+        </div>
+        <div>
+          <div>CSS</div>
+          <div>4 Years Experience</div>
+        </div>
+        <div>
+          <div>Javascript</div>
+          <div>4 Years Experience</div>
+        </div>
+        <div>
+          <div>Accessibility</div>
+          <div>4 Years Experience</div>
+        </div>
+        <div>
+          <div>React</div>
+          <div>3 Years Experience</div>
+        </div>
+        <div>
+          <div>Sass</div>
+          <div>3 Years Experience</div>
+        </div>
+      </div>
+      <div class="projects">
+        <div>Projects</div>
+        <div>Contact me</div>
+        <div>
+          <img src=""/>
+          <div>Design portfolio</div>
+          <div><span>HTML   </span><span>CSS</span></div>
+          <div><span>View Project   </span><span>View Code</span></div>
+        </div>
+        <div>
+          <img src=""/>
+          <div>E-learning landing page</div>
+          <div><span>HTML   </span><span>CSS</span></div>
+          <div><span>View Project   </span><span>View Code</span></div>
+        </div>
+        <div>
+          <img src=""/>
+          <div>Todo web app</div>
+          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+          <div><span>View Project   </span><span>View Code</span></div>
+        </div>
+        <div>
+          <img src=""/>
+          <div>Entertainment web app</div>
+          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+          <div><span>View Project   </span><span>View Code</span></div>
+        </div>
+        <div>
+          <img src=""/>
+          <div>Memory Game</div>
+          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+          <div><span>View Project   </span><span>View Code</span></div>
+        </div>
+        <div>
+          <img src=""/>
+          <div>Art gallery showcase</div>
+          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+          <div><span>View Project   </span><span>View Code</span></div>
+        </div>
+      </div>
+      <div class="contact">
+        <div>Contact</div>
+        <div>
+          I would love to hear about your project and how I could help. Please 
+          fill in the form, and I’ll get back to you as soon as possible.
+        </div>
+        <div>
+          <input placeholder="Name"/>
+          <input placeholder="Email"/>
+          <input placeholder="Message"/>
+          <button>Send message</button>
+        </div>
+      </div>
+    
+      <div class="footer">
+        <div>adamkeyes</div>
+        <div>logos</div>
+      </div>
+  </div> 
 
 </body>
 </html>
