@@ -10,194 +10,259 @@
   <style>
     
     body{
-      margin: 0px;
-      /*display: grid;
-      grid-auto-rows: auto;
-      grid-auto-columns: 100vw;
-      */
-      padding: 0;
+      
       border: 1px solid brown;
+      background-color: black;
     }
     .wrapper{
-      /*display: grid;
-      */
+      margin: 0px 0px;
+      background-color: black;
     }
     .header{
-      border: 2px solid rgb(14, 226, 209);
-      background: black;
-      margin: 0px 100px;
-      padding:0px 0px;
-      position: relative;
+      border: 1px dashed greenyellow;
+      background: rgb(3, 3, 3);
       display: grid;
       word-break: break-all;
-      grid-template-columns: 900px 100px ;
-      grid-template-rows: 50px;
+      grid-template-columns: 700px 300px 1fr;
+      grid-template-rows: 100px 1fr;
     
     }
-    .header-name{
-      border: 1px solid rgb(210, 101, 50);
-      color: white;
+    .header>img{
+      margin-top: 100px;
+      margin-left: -60px;
       grid-row: 1/2;
-      grid-column: 1/8;
+      grid-column: 1/4;
     }
+    .header>.contact-circle{
+      grid-row: 4/5;
+      grid-column: 2/3;
+      margin-top: 22px;
+      margin-left: -40px;
+    }
+    .header-name,.header-nicetomeetyou,.header-contactme{
+      padding-left: 150px;
+    }
+    .header-name{
+      color: white;
+      font-size: 3rem;
+      grid-row: 1/2;
+      grid-column: 1/4;
+    }
+    
     .header-logos{
-     border: 1px solid fuchsia;
-     grid-row: 1/4;
-     grid-column: 7/11;
+      border: 1px solid royalblue;
+     grid-row: 1/6;
+     grid-column: 2/12;
      display: grid;
+     word-break: break-all;
      grid-template-columns: subgrid;
      grid-template-rows: auto;
      
+     
+    }
+    .header-logos-empty{
+      border: 2px dashed red;
+      grid-row: 1/5;
+      grid-column: 4/12;
     }
     .header-logos>img{
-      grid-row: 1/4;
+
+      grid-row: 1/5;
       grid-column: 1/12;
     }
     .header-logos>.github{
-      
+      margin-top:20px;
+      grid-row: 1;
+      grid-column: 3/4;
+    }
+    .header-logos>.frontend{
+      margin-top:20px;
       grid-row: 1;
       grid-column: 4/5;
     }
-    .header-logos>.frontend{
+    .header-logos>.linkedin{
+      margin-top:20px;
+      grid-row: 1;
+      grid-column: 5/6;
+    }
+    .header-logos>.twitter{
+      margin-top:20px;
       grid-row: 1;
       grid-column: 6/7;
     }
-    .header-logos>.linkedin{
-      grid-row: 1;
-      grid-column: 8/9;
+    .header-nicetomeetyou>*{
+      display: flex;
+      align-items: stretch;
     }
-    .header-logos>.twitter{
-      grid-row: 1;
-      grid-column: 10/11;
-    }
-    .header-nicetomeetyou{
-      border: 1px solid crimson;
+    .header-nicetomeetyou>.wish{
+      border: 1px solid fuchsia;
       color: white;
-      grid-row: 2/3;
-      grid-column: 1/9;
+      padding-top: 45px;
+      font-size: 5rem;
+      letter-spacing: 1px;
+      line-height: 40px;
+      line-break: anywhere;
+      width: 700px;
     }
+    .header-nicetomeetyou>.wish-description{
+      border: 1px solid gold;
+      color: white;
+      padding-top: 45px;
+      font-size: medium;
+      letter-spacing: 1px;
+      word-break: keep-all;
+      width: 310px;
+    }
+   
     .header-contactme{
-      border: 1px solid mediumvioletred;
+      border: 1px solid red;
       color: white;
-      grid-row: 3/4;
-      grid-column: 1/9;
+      grid-row: 4/5;
+      grid-column: 1/12;
+      display: grid;
+      grid-template-columns: subgrid;
+      margin-top: 20px;
+      
     }
-    body>div>main{
+    .header-contactme>*{
+      border: 1px solid yellowgreen;
+      width: 80px;
+      height: 80px;
+    }
+    .header-contactme>.contact-Me{
+      grid-row: 1/2;
+      grid-column: 1/2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+    
+    body>div>.skills,body>div>.projects{
       border: 1px dashed greenyellow;
       grid-area: 1/7/span 1/span 8;
+      color: bisque;
     }
-    body>div>footer{
+    body>div>.footer{
       border: 1px solid blueviolet;
+      color: bisque;
     }
    
   </style>
 </head>
 <body>
   <div class="wrapper">
-    
-      
-      <div class="header">
-        <div class="header-name"><b>adamkeyes</b></div>
-        <div class="header-logos" >
-          <img src="./assets/images/image-profile-desktop.webp" height="450px" width="300px"/>
-          <img class="github" src="./assets/images/icon-github.svg"/>
-          <img class="frontend" src="./assets/images/icon-frontend-mentor.svg"/>
-          <img class="linkedin" src="./assets/images/icon-linkedin.svg"/>
-          <img class="twitter" src="./assets/images/icon-twitter.svg"/>
-        </div>
-        <div class="header-nicetomeetyou">
-          <div>Nice to meet you! I'm Adam Keyes.</div>
-          <div>Based in the UK, I'm a front-end developer passionate about 
-            building accessible web apps that users love.</div>
-        </div>
-        <div class="header-contactme">Contact Me</div>
+    <div class="header">
+      <img src="./assets/images/pattern-rings.svg" height="100px" width="400px" />
+
+      <div class="header-name">
+        <b>adamkeyes</b>
+
       </div>
-    
-    
-      <div class="skills">
-        <div>
-          <div>HTML</div>
-          <div>4 Years Experience</div>
-        </div>
-        <div>
-          <div>CSS</div>
-          <div>4 Years Experience</div>
-        </div>
-        <div>
-          <div>Javascript</div>
-          <div>4 Years Experience</div>
-        </div>
-        <div>
-          <div>Accessibility</div>
-          <div>4 Years Experience</div>
-        </div>
-        <div>
-          <div>React</div>
-          <div>3 Years Experience</div>
-        </div>
-        <div>
-          <div>Sass</div>
-          <div>3 Years Experience</div>
-        </div>
+      <div class="header-logos" >
+        <img src="./assets/images/image-profile-desktop.webp" height="600px" width="400px" />
+        <img class="github" src="./assets/images/icon-github.svg"/>
+        <img class="frontend" src="./assets/images/icon-frontend-mentor.svg"/>
+        <img class="linkedin" src="./assets/images/icon-linkedin.svg"/>
+        <img class="twitter" src="./assets/images/icon-twitter.svg"/>
       </div>
-      <div class="projects">
-        <div>Projects</div>
-        <div>Contact me</div>
-        <div>
-          <img src=""/>
-          <div>Design portfolio</div>
-          <div><span>HTML   </span><span>CSS</span></div>
-          <div><span>View Project   </span><span>View Code</span></div>
-        </div>
-        <div>
-          <img src=""/>
-          <div>E-learning landing page</div>
-          <div><span>HTML   </span><span>CSS</span></div>
-          <div><span>View Project   </span><span>View Code</span></div>
-        </div>
-        <div>
-          <img src=""/>
-          <div>Todo web app</div>
-          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-          <div><span>View Project   </span><span>View Code</span></div>
-        </div>
-        <div>
-          <img src=""/>
-          <div>Entertainment web app</div>
-          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-          <div><span>View Project   </span><span>View Code</span></div>
-        </div>
-        <div>
-          <img src=""/>
-          <div>Memory Game</div>
-          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-          <div><span>View Project   </span><span>View Code</span></div>
-        </div>
-        <div>
-          <img src=""/>
-          <div>Art gallery showcase</div>
-          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-          <div><span>View Project   </span><span>View Code</span></div>
-        </div>
+      <div class="header-logos-empty"></div>
+      <div class="header-nicetomeetyou">
+        <div class="wish">Nice to meet you!</div>
+        <div class="wish"> I'm <u style="text-decoration: underline;text-decoration-color: aquamarine;">Adam Keyes.</u></div>
+        <div class="wish-description">Based in the UK, I'm a front-end developer passionate about 
+          building accessible web apps that users love.</div>
       </div>
-      <div class="contact">
-        <div>Contact</div>
-        <div>
-          I would love to hear about your project and how I could help. Please 
-          fill in the form, and I’ll get back to you as soon as possible.
-        </div>
-        <div>
-          <input placeholder="Name"/>
-          <input placeholder="Email"/>
-          <input placeholder="Message"/>
-          <button>Send message</button>
-        </div>
+      <div class="header-contactme">
+        <span class="contact-Me">Contact Me</span>
       </div>
-    
-      <div class="footer">
-        <div>adamkeyes</div>
-        <div>logos</div>
+      <img class="contact-circle" src="./assets/images/pattern-circle.svg" height="80px" width="80px" />
+
+    </div>
+    <div class="skills">
+      <div>
+        <div>HTML</div>
+        <div>4 Years Experience</div>
       </div>
+      <div>
+        <div>CSS</div>
+        <div>4 Years Experience</div>
+      </div>
+      <div>
+        <div>Javascript</div>
+        <div>4 Years Experience</div>
+      </div>
+      <div>
+        <div>Accessibility</div>
+        <div>4 Years Experience</div>
+      </div>
+      <div>
+        <div>React</div>
+        <div>3 Years Experience</div>
+      </div>
+      <div>
+        <div>Sass</div>
+        <div>3 Years Experience</div>
+      </div>
+    </div>
+    <div class="projects">
+      <div>Projects</div>
+      <div>Contact me</div>
+      <div>
+        <img src=""/>
+        <div>Design portfolio</div>
+        <div><span>HTML   </span><span>CSS</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>E-learning landing page</div>
+        <div><span>HTML   </span><span>CSS</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>Todo web app</div>
+        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>Entertainment web app</div>
+        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>Memory Game</div>
+        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>Art gallery showcase</div>
+        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+    </div>
+    <div class="contact">
+      <div>Contact</div>
+      <div>
+        I would love to hear about your project and how I could help. Please 
+        fill in the form, and I’ll get back to you as soon as possible.
+      </div>
+      <div>
+        <input placeholder="Name"/>
+        <input placeholder="Email"/>
+        <input placeholder="Message"/>
+        <button>Send message</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div>adamkeyes</div>
+      <div>logos</div>
+    </div>
   </div> 
 
 </body>
