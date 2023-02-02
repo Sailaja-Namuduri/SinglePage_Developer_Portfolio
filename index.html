@@ -7,82 +7,253 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Single-page developer portfolio</title>
+  <style>
+    
+    body{
+      
+      background-color: black;
+    }
+    .wrapper{
+      background-color: black;
+    }
+    .header{
+      background: rgb(3, 3, 3);
+      display: grid;
+      word-break: break-all;
+      grid-template-columns: 700px 300px 1fr;
+      grid-template-rows: 100px 1fr;
+    }
+    .header>*{
+      
+    }
+    .header>img{
+      margin-top: 100px;
+      margin-left: -60px;
+      grid-row: 1/2;
+      grid-column: 1/4;
+    }
+    .header>.contact-circle{
+      grid-row: 4/5;
+      grid-column: 2/3;
+      margin-top: -50px;
+      margin-left: -40px;
+    }
+    .header-name,.header-nicetomeetyou,.header-contactme{
+      padding-left: 150px;
+    }
+    .header-name{
+      color: white;
+      font-size: 3rem;
+      grid-row: 1/2;
+      grid-column: 1/4;
+    }
+    
+    .header-logos{
+     grid-row: 1/6;
+     grid-column: 2/12;
+     display: grid;
+     word-break: break-all;
+     grid-template-columns: subgrid;
+     grid-template-rows: auto;
+     width: 400px;
+     
+    }
+    .header-logos-empty{
+      grid-row: 1/5;
+      grid-column: 4/12;
+    }
+    .header-logos>img{
+
+      grid-row: 1/5;
+      grid-column: 1/12;
+    }
+    .header-logos>.github{
+      margin-top:20px;
+      grid-row: 1;
+      grid-column: 3/4;
+    }
+    .header-logos>.frontend{
+      margin-top:20px;
+      grid-row: 1;
+      grid-column: 5/6;
+    }
+    .header-logos>.linkedin{
+      margin-top:20px;
+      grid-row: 1;
+      grid-column: 7/8;
+    }
+    .header-logos>.twitter{
+      margin-top:20px;
+      grid-row: 1;
+      grid-column: 9/10;
+    }
+    .header-nicetomeetyou>*{
+      display: flex;
+      align-items: stretch;
+    }
+    .header-nicetomeetyou>.wish{
+      color: white;
+      padding-top: 45px;
+      font-size: 5rem;
+      letter-spacing: 1px;
+      line-height: 40px;
+      line-break: anywhere;
+      width: 700px;
+    }
+    .header-nicetomeetyou>.wish-description{
+      color: white;
+      padding-top: 45px;
+      font-size: medium;
+      letter-spacing: 1px;
+      word-break: keep-all;
+      width: 310px;
+    }
+   
+    .header-contactme{
+      color: white;
+      grid-row: 4/5;
+      grid-column: 1/4;
+      display: grid;
+      grid-template-columns: subgrid;
+      margin-bottom: 80px;
+      width: fit-content;
+    }
+    .header-contactme>*{
+      width: 80px;
+
+    }
+    .header-contactme>.contact-Me{
+      grid-row: 1/2;
+      grid-column: 1/2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    
+    body>div>.skills,body>div>.projects{
+      grid-area: 1/7/span 1/span 8;
+      color: bisque;
+    }
+    body>div>.footer{
+      color: bisque;
+    }
+   
+  </style>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="header">
+      <img src="./assets/images/pattern-rings.svg" height="100px" width="400px" />
 
-  adamkeyes
+      <div class="header-name">
+        <b>adamkeyes</b>
 
-  Nice to meet you! I'm Adam Keyes.
+      </div>
+      <div class="header-logos" >
+        <img src="./assets/images/image-profile-desktop.webp" height="600px" width="400px" />
+        <img class="github" src="./assets/images/icon-github.svg"/>
+        <img class="frontend" src="./assets/images/icon-frontend-mentor.svg"/>
+        <img class="linkedin" src="./assets/images/icon-linkedin.svg"/>
+        <img class="twitter" src="./assets/images/icon-twitter.svg"/>
+      </div>
+      <div class="header-nicetomeetyou" style="height: fit-content;">
+        <div class="wish">Nice to meet you!</div>
+        <div class="wish"> I'm <span style="border-bottom: 1px solid aquamarine;padding-bottom: 20px;border-width: 5px;">Adam Keyes.</span></div>
+        <div class="wish-description">Based in the UK, I'm a front-end developer passionate about 
+          building accessible web apps that users love.</div>
+      </div>
+      <div class="header-contactme">
+        <span class="contact-Me" style="border-bottom: 1px solid aquamarine;padding-bottom: 10px;border-width: 5px;">Contact Me</span>
+      </div>
+      <img class="contact-circle" src="./assets/images/pattern-circle.svg" height="80px" width="80px" />
 
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
-
-  Contact me
-
-  HTML
-  4 Years Experience
-
-  CSS
-  4 Years Experience
-
-  JavaScript
-  4 Years Experience
-
-  Accessibility
-  4 Years Experience
-
-  React
-  3 Years Experience
-
-  Sass
-  3 Years Experience
-
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
+    </div>
+    <div class="skills">
+      <div>
+        <div>HTML</div>
+        <div>4 Years Experience</div>
+      </div>
+      <div>
+        <div>CSS</div>
+        <div>4 Years Experience</div>
+      </div>
+      <div>
+        <div>Javascript</div>
+        <div>4 Years Experience</div>
+      </div>
+      <div>
+        <div>Accessibility</div>
+        <div>4 Years Experience</div>
+      </div>
+      <div>
+        <div>React</div>
+        <div>3 Years Experience</div>
+      </div>
+      <div>
+        <div>Sass</div>
+        <div>3 Years Experience</div>
+      </div>
+    </div>
+    <div class="projects">
+      <div>Projects</div>
+      <div>Contact me</div>
+      <div>
+        <img src=""/>
+        <div>Design portfolio</div>
+        <div><span>HTML   </span><span>CSS</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>E-learning landing page</div>
+        <div><span>HTML   </span><span>CSS</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>Todo web app</div>
+        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>Entertainment web app</div>
+        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>Memory Game</div>
+        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+      <div>
+        <img src=""/>
+        <div>Art gallery showcase</div>
+        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+        <div><span>View Project   </span><span>View Code</span></div>
+      </div>
+    </div>
+    <div class="contact">
+      <div>Contact</div>
+      <div>
+        I would love to hear about your project and how I could help. Please 
+        fill in the form, and I’ll get back to you as soon as possible.
+      </div>
+      <div>
+        <input placeholder="Name"/>
+        <input placeholder="Email"/>
+        <input placeholder="Message"/>
+        <button>Send message</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div>adamkeyes</div>
+      <div>logos</div>
+    </div>
+  </div> 
 
 </body>
 </html>
