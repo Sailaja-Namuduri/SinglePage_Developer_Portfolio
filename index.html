@@ -11,21 +11,20 @@
     
     body{
       
-      border: 1px solid brown;
       background-color: black;
     }
     .wrapper{
-      margin: 0px 0px;
       background-color: black;
     }
     .header{
-      border: 1px dashed greenyellow;
       background: rgb(3, 3, 3);
       display: grid;
       word-break: break-all;
       grid-template-columns: 700px 300px 1fr;
       grid-template-rows: 100px 1fr;
-    
+    }
+    .header>*{
+      
     }
     .header>img{
       margin-top: 100px;
@@ -36,7 +35,7 @@
     .header>.contact-circle{
       grid-row: 4/5;
       grid-column: 2/3;
-      margin-top: 22px;
+      margin-top: -50px;
       margin-left: -40px;
     }
     .header-name,.header-nicetomeetyou,.header-contactme{
@@ -50,18 +49,16 @@
     }
     
     .header-logos{
-      border: 1px solid royalblue;
      grid-row: 1/6;
      grid-column: 2/12;
      display: grid;
      word-break: break-all;
      grid-template-columns: subgrid;
      grid-template-rows: auto;
-     
+     width: 400px;
      
     }
     .header-logos-empty{
-      border: 2px dashed red;
       grid-row: 1/5;
       grid-column: 4/12;
     }
@@ -78,24 +75,23 @@
     .header-logos>.frontend{
       margin-top:20px;
       grid-row: 1;
-      grid-column: 4/5;
+      grid-column: 5/6;
     }
     .header-logos>.linkedin{
       margin-top:20px;
       grid-row: 1;
-      grid-column: 5/6;
+      grid-column: 7/8;
     }
     .header-logos>.twitter{
       margin-top:20px;
       grid-row: 1;
-      grid-column: 6/7;
+      grid-column: 9/10;
     }
     .header-nicetomeetyou>*{
       display: flex;
       align-items: stretch;
     }
     .header-nicetomeetyou>.wish{
-      border: 1px solid fuchsia;
       color: white;
       padding-top: 45px;
       font-size: 5rem;
@@ -105,7 +101,6 @@
       width: 700px;
     }
     .header-nicetomeetyou>.wish-description{
-      border: 1px solid gold;
       color: white;
       padding-top: 45px;
       font-size: medium;
@@ -115,19 +110,17 @@
     }
    
     .header-contactme{
-      border: 1px solid red;
       color: white;
       grid-row: 4/5;
-      grid-column: 1/12;
+      grid-column: 1/4;
       display: grid;
       grid-template-columns: subgrid;
-      margin-top: 20px;
-      
+      margin-bottom: 80px;
+      width: fit-content;
     }
     .header-contactme>*{
-      border: 1px solid yellowgreen;
       width: 80px;
-      height: 80px;
+
     }
     .header-contactme>.contact-Me{
       grid-row: 1/2;
@@ -136,16 +129,14 @@
       justify-content: center;
       align-items: center;
     }
-
+    
     
     
     body>div>.skills,body>div>.projects{
-      border: 1px dashed greenyellow;
       grid-area: 1/7/span 1/span 8;
       color: bisque;
     }
     body>div>.footer{
-      border: 1px solid blueviolet;
       color: bisque;
     }
    
@@ -167,15 +158,14 @@
         <img class="linkedin" src="./assets/images/icon-linkedin.svg"/>
         <img class="twitter" src="./assets/images/icon-twitter.svg"/>
       </div>
-      <div class="header-logos-empty"></div>
-      <div class="header-nicetomeetyou">
+      <div class="header-nicetomeetyou" style="height: fit-content;">
         <div class="wish">Nice to meet you!</div>
-        <div class="wish"> I'm <u style="text-decoration: underline;text-decoration-color: aquamarine;">Adam Keyes.</u></div>
+        <div class="wish"> I'm <span style="border-bottom: 1px solid aquamarine;padding-bottom: 20px;border-width: 5px;">Adam Keyes.</span></div>
         <div class="wish-description">Based in the UK, I'm a front-end developer passionate about 
           building accessible web apps that users love.</div>
       </div>
       <div class="header-contactme">
-        <span class="contact-Me">Contact Me</span>
+        <span class="contact-Me" style="border-bottom: 1px solid aquamarine;padding-bottom: 10px;border-width: 5px;">Contact Me</span>
       </div>
       <img class="contact-circle" src="./assets/images/pattern-circle.svg" height="80px" width="80px" />
 
