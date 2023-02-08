@@ -193,7 +193,7 @@
       flex-direction: row;      
       align-items: flex-start;
       height: 1350px;
-      margin:0px 290px;
+      margin:0px 100px;
     }
    
     .project-flex-item-header{
@@ -223,8 +223,70 @@
       display: flex;
       justify-content: right;
       align-items:right;
-    }    
-    body>div>.skills-flex,body>div>.projects-flex,body>div>.contact{
+    }
+    
+    .contact-flex{
+      background: rgb(31, 30, 30);;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin:0px 0px;
+      height: 400px;
+      list-style-type: none;
+      position: relative;
+      background-image: url(./assets/images/pattern-rings.svg);
+      background-position: bottom 10px left -180px;
+      background-repeat: no-repeat;
+      background-size: 400px ;
+    }
+    .contact-flex-buffer{
+      margin:0px 100px;
+      width: 1350px;
+    }
+    .contact-flex-ul{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 60px;
+      list-style-type: none;
+      width: 100%;
+      gap: 558px;
+    }
+    
+    .contact-flex-item{
+
+      width:350px;
+      
+    }
+        
+    
+    .contact-heading{
+      font-size: 55px;
+      margin-bottom: 30px;
+    }
+    .contact-description{
+      letter-spacing: 0.35px;
+      font-size: 15px;
+      width: 350px;
+    }
+    .form-name,.form-email,.form-message{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: none;
+      border-bottom: 2px solid rgb(237, 230, 230);
+      background: rgb(31, 30, 30);
+    }
+    .form-send-message{
+      width:140px;
+      border: none;
+      border-bottom: 1px solid aquamarine;
+      background: rgb(31, 30, 30);
+      color:rgb(237, 230, 230);
+      cursor: pointer;
+      letter-spacing: 1px;
+      
+    }
+    body>div>.skills-flex,body>div>.projects-flex,body>div>.contact-flex{
       color: whitesmoke;
     }
     body>div>.footer{
@@ -397,20 +459,27 @@
         </div>
       </li>
     </ul>
-
-
-
-    <div class="contact">
-      <div>Contact</div>
-      <div>
-        I would love to hear about your project and how I could help. Please 
-        fill in the form, and I’ll get back to you as soon as possible.
-      </div>
-      <div>
-        <input placeholder="Name"/>
-        <input placeholder="Email"/>
-        <input placeholder="Message"/>
-        <button>Send message</button>
+    <div class="contact-flex">
+      <div class="contact-flex-buffer">
+        <ul class="contact-flex-ul">
+          <li class="contact-flex-item left">
+            <div>
+              <div class="contact-heading">Contact</div>
+              <div class="contact-description">
+                I would love to hear about your project and how I could help. Please 
+                fill in the form, and I’ll get back to you as soon as possible.
+              </div>
+            </div> 
+          </li>
+          <li class="contact-flex-item right">
+            <div class="contact-form">
+              <input class="form-name" placeholder="Name"/>
+              <input class="form-email" placeholder="Email"/>
+              <textarea class="form-message" placeholder="Message" rows="4" cols="50"></textarea>
+              <button class="form-send-message">SEND MESSAGE</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="footer">
