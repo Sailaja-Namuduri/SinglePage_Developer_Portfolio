@@ -185,8 +185,46 @@
       display: block;
       font-size: 15px;
       padding-left: 10px;
+      gap: 10px;
     }
-    body>div>.skills-flex,body>div>.projects{
+    .projects-flex{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;      
+      align-items: flex-start;
+      height: 1350px;
+      margin:0px 290px;
+    }
+   
+    .project-flex-item-header{
+      list-style-type: none;
+      height: 70px;
+    }
+    .project-heading{
+      font-size: 55px;
+    }
+    .project-contactme{
+      display: flex;
+      justify-content: right;
+      align-items: end;
+      padding-top: 25px;
+      
+    }
+    .project-contactme>span{
+      font-size: 14px;
+      border-bottom: 1px solid aquamarine;
+      padding-bottom: 10px;
+    }
+    .project-flex-item{
+      list-style-type: none;
+      height: 360px;
+    }
+    .project-flex-item>.even{
+      display: flex;
+      justify-content: right;
+      align-items:right;
+    }    
+    body>div>.skills-flex,body>div>.projects-flex,body>div>.contact{
       color: whitesmoke;
     }
     body>div>.footer{
@@ -270,56 +308,98 @@
         </div>
       </div>
       <div class="col-1" style="border:0px solid green;color: bisque;background: black;">
-    
       </div>
     </div>
 
+    <ul class="projects-flex">
+      <li class="col-6 project-flex-item-header">
+        <div class="project-heading">Projects</div>
+      </li>
+      <li class="col-6 project-flex-item-header">
+        <div class="project-contactme"><span>CONTACT ME</span></div>
+      </li>
+      <li class="col-6 project-flex-item">
+        <div class="odd">
+          <div>
+            <img src="./assets/images/thumbnail-project-1-large.webp" width="420px" height="280px">
+            <div>Design portfolio</div>
+            <div><span>HTML   </span><span>CSS</span></div>
+            <div>
+              <span>View Project   </span>
+              <span>View Code</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-6 project-flex-item">
+        <div class="even">
+          <div>
+            <img src="./assets/images/thumbnail-project-2-large.webp" width="420px" height="280px"/>
+            <div>E-learning landing page</div>
+            <div><span>HTML   </span><span>CSS</span></div>
+            <div>
+              <span>View Project   </span>
+              <span>View Code</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-6 project-flex-item">
+        <div class="odd">
+          <div>
+            <img src="./assets/images/thumbnail-project-3-large.webp" width="420px" height="280px"/>
+            <div>Todo web app</div>
+            <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+            <div>
+              <span>View Project   </span>
+              <span>View Code</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-6 project-flex-item">
+        <div class="even">
+          <div>
+            <img src="./assets/images/thumbnail-project-4-large.webp" width="420px" height="280px"/>
+            <div>Entertainment web app</div>
+            <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+            <div>
+              <span>View Project   </span>
+              <span>View Code</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-6 project-flex-item ">
+        <div class="odd">
+          <div>
+            <img src="./assets/images/thumbnail-project-5-large.webp" width="420px" height="280px"/>
+            <div>Memory Game</div>
+            <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+            <div>
+              <span>View Project   </span>
+              <span>View Code</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-6 project-flex-item">
+        <div class="even">
+          <div>
+            <img src="./assets/images/thumbnail-project-6-large.webp" width="420px" height="280px"/>
+            <div>Art gallery showcase</div>
+            <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
+            <div>
+              <span>View Project   </span>
+              <span>View Code</span>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
 
 
 
-
-
-
-    <div class="projects">
-      <div>Projects</div>
-      <div>Contact me</div>
-      <div>
-        <img src=""/>
-        <div>Design portfolio</div>
-        <div><span>HTML   </span><span>CSS</span></div>
-        <div><span>View Project   </span><span>View Code</span></div>
-      </div>
-      <div>
-        <img src=""/>
-        <div>E-learning landing page</div>
-        <div><span>HTML   </span><span>CSS</span></div>
-        <div><span>View Project   </span><span>View Code</span></div>
-      </div>
-      <div>
-        <img src=""/>
-        <div>Todo web app</div>
-        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-        <div><span>View Project   </span><span>View Code</span></div>
-      </div>
-      <div>
-        <img src=""/>
-        <div>Entertainment web app</div>
-        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-        <div><span>View Project   </span><span>View Code</span></div>
-      </div>
-      <div>
-        <img src=""/>
-        <div>Memory Game</div>
-        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-        <div><span>View Project   </span><span>View Code</span></div>
-      </div>
-      <div>
-        <img src=""/>
-        <div>Art gallery showcase</div>
-        <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-        <div><span>View Project   </span><span>View Code</span></div>
-      </div>
-    </div>
     <div class="contact">
       <div>Contact</div>
       <div>
