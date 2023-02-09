@@ -149,43 +149,31 @@
       align-content: center;
       border-bottom: 3px solid grey;
     }
+    .skills-flex-background{
+      background-image: url(./assets/images/pattern-rings.svg);
+      background-position: bottom right -170px;
+      background-repeat: no-repeat;
+      height: 250px;
+    }
     .skills-flex{
-      padding-left: 10px;
-      height: 350px;
-      width: 100%;
       display: flex;
       flex-direction: row;
-      color: 1px solid white;
+      flex-wrap: wrap;
       align-items: flex-start;
+      margin: 0px 100px;
+      height: 90%;
     }
-    .skills-flex-row{
-      display:flex;
-      flex-direction:row;
-      height: 150px;
-      align-items: flex-start;
+    .skill-flex-item{
+      height:50%;
     }
-    .skill-element{
-      border: 0px solid orange;
-      height: 150px;
-      display: flex;
-      align-items: left;
-      justify-content: left;
+    .skill-flex-item>.row>.skill-name{
+      font-size: 35px;
+      font-weight: bold;
+      color: white;
     }
-    .skill-backround-rings{
-      background-image: url(./assets/images/pattern-rings.svg);
-      background-position: bottom left 160px;
-      background-repeat: no-repeat;
-    }
-    .skill-element>.row>.skill-name{
-      display: block;
-      font-size: 40px;
-      padding-left: 10px;
-    }
-    .skill-element>.row>.years{
-      display: block;
+    .skill-flex-item>.row>.years{
       font-size: 15px;
-      padding-left: 10px;
-      gap: 10px;
+      color: white;
     }
     .projects-flex{
       display: flex;
@@ -372,51 +360,45 @@
     </br></br><div class="new-section-line"></div></br></br>
 
 
-    <div class="row skills-flex" style="position: relative;">
-      <div class="col-11" style="border: 0px solid rgb(64, 194, 44);">
-        <div class="row skills-flex-row">
-          <div class="col-4 skill-element" >
-            <div class="row">
-              <span class="skill-name">HTML</span></br>
-              <span class="years">4 Years Experience</span>
-            </div>
+    <div class="skills-flex-background">
+      <ul class="skills-flex">
+        <li class="col-4 skill-flex-item" >
+          <div class="row">
+            <span class="skill-name">HTML</span></br>
+            <span class="years">4 Years Experience</span>
           </div>
-          <div class="col-4 skill-element">
-            <div class="row">
-              <span class="skill-name">CSS</span></br>
-              <span class="years">4 Years Experience</span>
-            </div>
+        </li>
+        <li class="col-4 skill-flex-item">
+          <div class="row">
+            <span class="skill-name">CSS</span></br>
+            <span class="years">4 Years Experience</span>
           </div>
-          <div class="col-4 skill-element" >
-            <div class="row">
-              <span class="skill-name">Javascript</span></br>
-              <span class="years">4 Years Experience</span>
-            </div>
+        </li>
+        <li class="col-4 skill-flex-item" >
+          <div class="row">
+            <span class="skill-name">Javascript</span></br>
+            <span class="years">4 Years Experience</span>
           </div>
+        </li>
+        <li class="col-4 skill-flex-item" >
+          <div class="row">
+            <span class="skill-name">Accessibility</span></br>
+            <span class="years">4 Years Experience</span>
           </div>
-          <div class="row skills-flex-row">
-          <div class="col-4 skill-element" >
-            <div class="row">
-              <span class="skill-name">Accessibility</span></br>
-              <span class="years">4 Years Experience</span>
-            </div>
+        </li>
+        <li class="col-4 skill-flex-item" >
+          <div class="row">
+            <span class="skill-name">React</span></br>
+            <span class="years">3 Years Experience</span>
           </div>
-          <div class="col-4 skill-element" >
-            <div class="row">
-              <span class="skill-name">React</span></br>
-              <span class="years">3 Years Experience</span>
-            </div>
+        </li>
+        <li class="col-4 skill-flex-item"  >
+          <div class="row">
+            <span class="skill-name">Sass</span></br>
+            <span class="years">3 Years Experience</span>
           </div>
-          <div class="col-4 skill-element skill-backround-rings"  >
-            <div class="row">
-              <span class="skill-name">Sass</span></br>
-              <span class="years">3 Years Experience</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-1" style="border:0px solid green;color: bisque;background: black;">
-      </div>
+        </li>
+      </ul>
     </div>
 
     <ul class="projects-flex">
