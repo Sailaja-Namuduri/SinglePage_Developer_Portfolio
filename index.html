@@ -242,9 +242,11 @@
       margin: 0px 100px;
     }
     
-    .contact-flex-item{
-      width:50%;
-      
+   
+    .contact-flex-ul>.left{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
     .contact-flex-ul>.right{
       display: flex;
@@ -254,14 +256,15 @@
     .contact-heading{
       font-size: 55px;
       margin-bottom: 30px;
+      width: 75%;
     }
     .contact-description{
       letter-spacing: 0.35px;
       font-size: 15px;
-      width: 350px;
+      width: 75%;
     }
     .contact-form{
-      width: 50%;
+      width: 75%;
       
     }
     .form-name,.form-email,.form-message{
@@ -496,10 +499,11 @@
         </div>
       </li>
     </ul>
+
     <div class="contact-flex">
       <ul class="contact-flex-ul">
-        <li class="contact-flex-item left">
-          <div>
+        <li class="col-6 left">
+          <div class="contact-form">
             <div class="contact-heading">Contact</div>
             <div class="contact-description">
               I would love to hear about your project and how I could help. Please 
@@ -507,7 +511,7 @@
             </div>
           </div> 
         </li>
-        <li class="contact-flex-item right">
+        <li class="col-6 right">
           <div class="contact-form">
             <input class="form-name" placeholder="Name"/>
             <input class="form-email" placeholder="Email"/>
@@ -517,7 +521,9 @@
         </li>
       </ul>
     </div>
+
     <div class="new-line-container"><div class="new-line"></div></div>
+
     <div class="footer">
       <ul class="footer-margin">
         <li class="col-6 footer-left">adamkeyes</li>
