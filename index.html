@@ -27,127 +27,124 @@
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
- 
+    body{
+      background: black;
+    }
     .wrapper{
       background-color: black;
     }
-    .header{
-      background: rgb(3, 3, 3);
-      display: grid;
-      word-break: break-all;
-      grid-template-columns: 700px 300px 1fr;
-      grid-template-rows: 100px 1fr;
+    .header-flex-background{
+      height: 700px;
+      background-image: url(./assets/images/pattern-rings.svg);
+      background-position: top 140px left -100px;
+      background-repeat: no-repeat;
       
     }
-    .header>*{
-
-    }
-    .header>img{
-      margin-top: 100px;
-      margin-left: -60px;
-      grid-row: 1/2;
-      grid-column: 1/4;
-    }
-    .header>.contact-circle{
-      grid-row: 4/5;
-      grid-column: 2/3;
-      margin-top: -35px;
-      margin-left: -40px;
-    }
-    .header-name,.header-nicetomeetyou,.header-contactme{
-      padding-left: 150px;
-    }
-    .header-name{
-      color: white;
-      font-size: 3rem;
-      grid-row: 1/2;
-      grid-column: 1/4;
-    }
-    
-    .header-logos{
-     grid-row: 1/6;
-     grid-column: 2/12;
-     display: grid;
-     word-break: break-all;
-     grid-template-columns: subgrid;
-     grid-template-rows: auto;
-     width: 400px;
-     
-    }
-    .header-logos-empty{
-      grid-row: 1/5;
-      grid-column: 4/12;
-    }
-    .header-logos>img{
-
-      grid-row: 1/5;
-      grid-column: 1/12;
-    }
-    .header-logos>.github{
-      margin-top:20px;
-      grid-row: 1;
-      grid-column: 3/4;
-    }
-    .header-logos>.frontend{
-      margin-top:20px;
-      grid-row: 1;
-      grid-column: 5/6;
-    }
-    .header-logos>.linkedin{
-      margin-top:20px;
-      grid-row: 1;
-      grid-column: 7/8;
-    }
-    .header-logos>.twitter{
-      margin-top:20px;
-      grid-row: 1;
-      grid-column: 9/10;
-    }
-    .header-nicetomeetyou>*{
+    .header-flex{
       display: flex;
-      align-items: stretch;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      height: 90%;
+      list-style-type: none;
+      margin: 40px 100px;
+      position: relative;
     }
-    .header-nicetomeetyou>.wish{
-      color: white;
-      padding-top: 45px;
-      font-size: 5rem;
-      letter-spacing: 1px;
-      line-height: 40px;
-      line-break: anywhere;
-      width: 700px;
-    }
-    .header-nicetomeetyou>.wish-description{
-      color: white;
-      padding-top: 45px;
-      font-size: medium;
-      letter-spacing: 1px;
-      word-break: keep-all;
-      width: 310px;
-    }
-   
-    .header-contactme{
+    .header-flex-item-left{
+      height: 100%;
+      font-size: 25px;
       
-      color: white;
-      grid-row: 4/5;
-      grid-column: 1/4;
-      display: grid;
-      grid-template-columns: subgrid;
-      margin-bottom: 80px;
     }
-   
-    .header-contactme>.contact-Me{
-      width: 100px;
-      grid-row: 1/2;
-      grid-column: 1/2;
+    .header-flex-item-left>div{
+      margin: 15px 0px;
+    }
+    .header-flex-item-left-description{
+      position: absolute;
+      top: 20%;
+      bottom: 10%;
+      left: 40px;
+      right: 35%;
+      text-align: center;
+      font-size: 18px;
+    }
+    .header-absolute-heading{
+      width: 550px;
+      font-weight: bolder;
+      font-size: 55px;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 25px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      letter-spacing: 1px;
+      text-align: left;
     }
-    .new-section-line{
-      width:75%;
-      align-content: center;
-      border-bottom: 3px solid grey;
+    .header-absolute-heading-Adam{
+      border-bottom: 1px solid aquamarine;
+      border-width: 2px;
+      letter-spacing: 1px;
+    }
+    .header-absolute-description{
+      font-size: 15px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      letter-spacing: 1px;
+      padding: 3% 0px;
+      width: 40%;
+      text-align: left;
+    }
+    .header-contact-and-circle{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+    }
+    .header-conAndCir-contactme{
+      display: flex;
+      align-items: bottom;
+      justify-content: bottom;
+    }
+    .header-conAndCir-circle{
+      display: flex;
+      align-items: right;
+      justify-content: right;
+    }
+    .header-conatct-contactme{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      border-bottom: 1px solid aquamarine;
+      border-width: 2px;
+      position: absolute;
+      bottom: 0px;
+    }
+    .contact-circle{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      
+      position: absolute;
+      bottom: 0px;
+    }
+    .header-flex-item-right{
+      height: 100%;
+      background-image: url(./assets/images/image-profile-desktop.webp);
+      background-repeat: no-repeat;
+      background-size: 95% 100%;
+      background-position:  top 0% right 0%  ;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .header-logos-position{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 100%;
+      
+    }
+    .header-logos-position>img{
+      margin: 15px;
     }
     .skills-flex-background{
       background-image: url(./assets/images/pattern-rings.svg);
@@ -167,7 +164,7 @@
       height:50%;
     }
     .skill-flex-item>.row>.skill-name{
-      font-size: 35px;
+      font-size: 200%;
       font-weight: bold;
       color: white;
     }
@@ -220,6 +217,7 @@
     
     
     .contact-flex{
+      padding-top: 50px;
       background: rgb(31, 30, 30);
       background-image: url(./assets/images/pattern-rings.svg);
       background-position: bottom left -170px;
@@ -291,6 +289,13 @@
       align-items: center;
       justify-content: center;
     }
+    .new-line-container-skills{
+      background: black;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .new-line{
       border-bottom: 3px solid grey;
       margin: 20px 100px;
@@ -300,6 +305,7 @@
       background: rgb(31, 30, 30);
     }
     .footer-margin{
+      padding-bottom: 50px;
       margin: 0px 100px;
       display: flex;
       flex-wrap: wrap;
@@ -322,7 +328,7 @@
     .footer-logos{
       letter-spacing: 20px;
     }
-    body>div>.skills-flex,body>div>.projects-flex,body>div>.contact-flex,body>div>.footer{
+    body>div>.header-flex-background,body>div>.skills-flex,body>div>.projects-flex,body>div>.contact-flex,body>div>.footer{
       color: whitesmoke;
     }
     
@@ -331,34 +337,42 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="header">
-      <img src="./assets/images/pattern-rings.svg" height="100px" width="400px" />
-
-      <div class="header-name">
-        <b>adamkeyes</b>
-
-      </div>
-      <div class="header-logos" >
-        <img src="./assets/images/image-profile-desktop.webp" height="650px" width="400px" />
-        <img class="github" src="./assets/images/icon-github.svg"/>
-        <img class="frontend" src="./assets/images/icon-frontend-mentor.svg"/>
-        <img class="linkedin" src="./assets/images/icon-linkedin.svg"/>
-        <img class="twitter" src="./assets/images/icon-twitter.svg"/>
-      </div>
-      <div class="header-nicetomeetyou" style="height: fit-content;">
-        <div class="wish">Nice to meet you!</div>
-        <div class="wish"> I'm <span style="border-bottom: 1px solid aquamarine;padding-bottom: 20px;border-width: 5px;">Adam Keyes.</span></div>
-        <div class="wish-description">Based in the UK, I'm a front-end developer passionate about 
-          building accessible web apps that users love.</div>
-      </div>
-      <div class="header-contactme">
-        <span class="contact-Me" style="border-bottom: 1px solid aquamarine;padding-bottom: 10px;border-width: 5px;">Contact Me</span>
-      </div>
-      <img class="contact-circle" src="./assets/images/pattern-circle.svg" height="80px" width="80px" />
-
+    <div class="header-flex-background">
+      <ul class="header-flex">
+        <li class="col-7 header-flex-item-left">
+          <div>
+            <b>adamkeyes</b>
+          </div>
+          <div class="header-flex-item-left-description">
+            <div class="header-absolute-heading">
+              <div>Nice to meet you!</div>
+              <div>
+                I'm <span class="header-absolute-heading-Adam">Adam Keyes.
+              </div>
+            </div>
+            <div class="header-absolute-description">
+              Based in the UK, I'm a front-end developer passionate about 
+              building accessible web apps that users love.
+            </div>
+            <div class="header-contact-and-circle">
+              <div class="col-6 header-conAndCir-contactme">
+                <div class="header-conatct-contactme">CONTACT ME</div>
+              </div>
+              <div class="col-6 header-conAndCir-circle"><img class="contact-circle" src="./assets/images/pattern-circle.svg" height="80px" width="80px" /></div>
+            </div>
+          </div>
+        </li>
+        <li class="col-5 header-flex-item-right">
+          <div class="header-logos-position">
+            <img class="github" src="./assets/images/icon-github.svg" height="5%" width="5%"/>
+            <img class="frontend" src="./assets/images/icon-frontend-mentor.svg" height="5%" width="5%"/>
+            <img class="linkedin" src="./assets/images/icon-linkedin.svg" height="5%" width="5%"/>
+            <img class="twitter" src="./assets/images/icon-twitter.svg" height="5%" width="5%"/>
+          </div>
+        </li>
+      </ul>
     </div>
-    </br></br><div class="new-section-line"></div></br></br>
-
+    <div class="new-line-container-skills"><div class="new-line"></div></div>
 
     <div class="skills-flex-background">
       <ul class="skills-flex">
@@ -410,7 +424,7 @@
       </li>
       <li class="col-6 project-flex-item-odd">
         <div>
-          <img src="./assets/images/thumbnail-project-1-large.webp" width="420px" height="280px">
+          <img src="./assets/images/thumbnail-project-1-large.webp" width="100%" height="90%">
           <div>Design portfolio</div>
           <div><span>HTML   </span><span>CSS</span></div>
           <div>
@@ -421,7 +435,7 @@
       </li>
       <li class="col-6 project-flex-item-even">
         <div>
-          <img src="./assets/images/thumbnail-project-2-large.webp" width="420px" height="280px"/>
+          <img src="./assets/images/thumbnail-project-2-large.webp" width="100%" height="90%"/>
           <div>E-learning landing page</div>
           <div><span>HTML   </span><span>CSS</span></div>
           <div>
@@ -432,7 +446,7 @@
       </li>
       <li class="col-6 project-flex-item-odd">
         <div>
-          <img src="./assets/images/thumbnail-project-3-large.webp" width="420px" height="280px"/>
+          <img src="./assets/images/thumbnail-project-3-large.webp" width="100%" height="90%"/>
           <div>Todo web app</div>
           <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
           <div>
@@ -443,7 +457,7 @@
       </li>
       <li class="col-6 project-flex-item-even">
         <div>
-          <img src="./assets/images/thumbnail-project-4-large.webp" width="420px" height="280px"/>
+          <img src="./assets/images/thumbnail-project-4-large.webp" width="100%" height="90%"/>
           <div>Entertainment web app</div>
           <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
           <div>
@@ -454,7 +468,7 @@
       </li>
       <li class="col-6 project-flex-item-odd">
         <div>
-          <img src="./assets/images/thumbnail-project-5-large.webp" width="420px" height="280px"/>
+          <img src="./assets/images/thumbnail-project-5-large.webp" width="100%" height="90%"/>
           <div>Memory Game</div>
           <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
           <div>
@@ -465,7 +479,7 @@
       </li>
       <li class="col-6 project-flex-item-even">
         <div>
-          <img src="./assets/images/thumbnail-project-6-large.webp" width="420px" height="280px"/>
+          <img src="./assets/images/thumbnail-project-6-large.webp" width="100%" height="90%"/>
           <div>Art gallery showcase</div>
           <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
           <div>
