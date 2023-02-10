@@ -146,6 +146,8 @@
     }
     .header-logos-position>img{
       margin: 15px;
+      width: 5%;
+      height: 5%;
     }
     .skills-flex-background{
       background-image: url(./assets/images/pattern-rings.svg);
@@ -620,11 +622,392 @@
     }
     
     }
+    /*For Mobiles*/
+    @media (max-width:481px) {
+
+      .col-mob-1 {width: 8.33%;}
+      .col-mob-2 {width: 16.66%;}
+      .col-mob-3 {width: 25%;}
+      .col-mob-4 {width: 33.33%;}
+      .col-mob-5 {width: 41.66%;}
+      .col-mob-6 {width: 50%;}
+      .col-mob-7 {width: 58.33%;}
+      .col-mob-8 {width: 66.66%;}
+      .col-mob-9 {width: 75%;}
+      .col-mob-10 {width: 83.33%;}
+      .col-mob-11 {width: 91.66%;}
+      .col-mob-12 {width: 100%;}
+
+      .header-flex-background{
+      height: 1200px;
+      background-image: url(./assets/images/pattern-rings.svg),url(./assets/images/pattern-circle.svg);
+      background-position: top 200px left -250px, right -230px top 400px;
+      background-size: 600px,300px;
+      background-repeat: no-repeat;
+      width: 550px;
+      margin: 0px 10px;
+    }
+    
+    .header-flex{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 70%;
+      list-style-type: none;
+      margin: 0px 0px;
+      position: relative;
+    }
+    .header-flex-item-left{
+      height: 10%;
+      
+      font-size: 50px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .header-flex-item-left>div{
+      margin: 15px 0px;
+      
+    }
+    .header-flex-item-left-description{
+      position: absolute;
+      top: 90%;
+      bottom: -40%;
+      left: 0px;
+      right: 0%;
+      text-align: center;
+      font-size: 18px;
+      
+    }
+    .header-absolute-heading{
+      width: 550px;
+      font-weight: bolder;
+      font-size: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      letter-spacing: 1px;
+      text-align: left;
+      
+    }
+    .header-absolute-heading-Adam{
+      border-bottom: 1px solid aquamarine;
+      border-width: 2px;
+      letter-spacing: 1px;
+    }
+    .header-absolute-description{
+      font-size: 25px;
+      
+      text-align: center;
+      letter-spacing: 1px;
+      padding: 3% 0px;
+      width: 100%;
+      text-align: center;
+      line-height: 50.5px;
+    }
+    .header-contact-and-circle{
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .header-conAndCir-contactme{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .header-conAndCir-circle{
+      display: none
+
+    }
+    .header-conatct-contactme{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid aquamarine;
+      border-width: 2px;
+      position: absolute;
+      bottom: 0px;
+      font-size: 25px;
+      letter-spacing: 2px;
+      padding-bottom: 2px;
+    }
+    
+    .header-flex-item-right{
+      height: 70%;
+      width: 70%;
+      background-image: url(./assets/images/image-profile-mobile.webp);
+      background-repeat: no-repeat;
+      background-size: 350px 750px;  
+      background-position-x: 0px;
+      background-position-y: -160px;
+    }
+    .header-logos-position{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      
+    }
+    .header-logos-position>img{
+      margin: 30px;
+      width: 25%;
+      height: 25%;
+    }
+    .skills-flex-background{
+      background-image: url(./assets/images/pattern-rings.svg);
+      background-position: bottom -70px right -350px;
+      background-repeat: no-repeat;
+      height: 850px;
+      width: 550px;
+      text-align: center;
+    }
+    .skills-flex{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 0px;
+      height: 100%;
+      width: 100%;
+    }
+    .skill-flex-item{
+      height:15%;
+      width: 100%;
+    }
+    .skill-flex-item>.row>.skill-name{
+      font-size: 300%;
+      font-weight: bold;
+      color: white;
+    }
+    .skill-flex-item>.row>.years{
+      font-size: 25px;
+      color: white;
+    }
+    .new-line-container-skills-mob{
+      width: 160%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .new-line-mob{
+      border-bottom: 3px solid grey;
+      margin: 0px 0px;
+      width: 100%;
+    }
+
+    .projects-flex{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;      
+      align-items: flex-start;
+      height: 4200px;
+      width: 550px;
+      margin:80px 0px;
+      padding-left: 0;
+    }
+    .project-flex-item-header{
+      list-style-type: none;
+      height: 70px;
+      width: 50%;
+      margin-bottom: 0px;
+    }
+    .project-heading{
+      font-size: 55px;
+      width: 100%;
+      
+    }
+    .project-contactme{
+      display: flex;
+      justify-content: right;
+      align-items: end;
+      padding-top: 25px;
+      width: 100%;
+      
+    }
+    .project-contactme>span{
+      font-size: 20px;
+      letter-spacing: 2px;
+      border-bottom: 2px solid aquamarine;
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+    .project-flex-item-odd{
+      list-style-type: none;
+      height: 620px;
+      display: flex;
+      justify-content: left;
+      align-items:left;
+      flex-direction: column;
+      width: 550px;;
+    }
+    .project-flex-item-even{
+      list-style-type: none;
+      height: 620px;
+      display: flex;
+      justify-content: right;
+      align-items:right;
+      flex-direction: column;
+      width: 550px;
+    }
+    .project-flex-item-even>div>img{
+      width: 100%;
+      height: 100%;
+    }
+    .project-flex-item-odd>div>img{
+      width: 100%;
+      height: 100%;
+    }
+    .project-flex-item-description{
+      margin-top: 21px;
+      line-height: 65PX;
+    }
+    .project-name{
+      font-size: 35px;
+      letter-spacing: 0.5px;
+    }
+    .project-languages-used{
+      font-size: 25px;
+    }
+    .project-View-Project-Code>span{
+      margin-right: 50px;
+      font-size: 25px;
+      letter-spacing: 1px;
+    }
+    .project-view-project{
+      border-bottom: 2px solid aquamarine;
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+    .project-view-code{
+      border-bottom: 2px solid aquamarine;
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+    
+
+    .extra-empty{
+      list-style-type: none;
+      width:0%;
+    }
+    
+    .contact-flex{
+      padding-top: 50px;
+      background: rgb(31, 30, 30);
+      background-image: url(./assets/images/pattern-rings.svg);
+      background-position: bottom 50px left -330px;
+      background-repeat: no-repeat;
+      width: 550px;
+    }
+    .contact-flex-ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-top: 0px;
+      list-style-type: none;
+      height: 800px;
+      margin: 0px 0px;
+      padding-left: 0;
+    }
+    .contact-flex-ul>.left{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+    .contact-flex-ul>.right{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .contact-heading{
+      font-size: 65px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    .contact-description{
+      font-size: 21px;
+      width: 100%;
+      line-height: 45px;
+    }
+    .contact-form{
+      width: 100%;
+    }
+    .form-name,.form-email,.form-message{
+      font-size: 25px;
+      width: 100%;
+      padding: 18px 30px;
+      margin: 8px 0;
+      border: none;
+      border-bottom: 2px solid rgb(237, 230, 230);
+      background: rgb(31, 30, 30);
+    }
+    .form-send-button-container{
+      margin-top: 30px;
+      width: 100%;
+    }
+    .form-send-message{
+      width:200px;
+      border: none;
+      border-bottom: 2px solid aquamarine;
+      background: rgb(31, 30, 30);
+      color:rgb(237, 230, 230);
+      cursor: pointer;
+      letter-spacing: 2px;
+      font-size: 21px;
+      padding-bottom: 10px;
+    }
+    
+    
+    .footer{
+      background: rgb(31, 30, 30);
+      width: 550px;
+
+    }
+    .footer-margin{
+      padding-bottom: 50px;
+      margin: 0px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      list-style-type: none;
+    }
+    .footer-margin>li{
+      margin: 15px;
+    }
+    .footer-left{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .footer-right{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-logos{
+      letter-spacing: 20px;
+    }
+    }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <div class="header-flex-background">
+    <div class="header-flex-background header-flex-background-mobile">
       <ul class="header-flex">
         <li class="col-7 col-tab-7 header-flex-item-left">
           <div>
@@ -651,50 +1034,50 @@
         </li>
         <li class="col-5 col-tab-5 header-flex-item-right">
           <div class="header-logos-position">
-            <img class="github" src="./assets/images/icon-github.svg" height="5%" width="5%"/>
-            <img class="frontend" src="./assets/images/icon-frontend-mentor.svg" height="5%" width="5%"/>
-            <img class="linkedin" src="./assets/images/icon-linkedin.svg" height="5%" width="5%"/>
-            <img class="twitter" src="./assets/images/icon-twitter.svg" height="5%" width="5%"/>
+            <img class="github" src="./assets/images/icon-github.svg"/>
+            <img class="frontend" src="./assets/images/icon-frontend-mentor.svg"/>
+            <img class="linkedin" src="./assets/images/icon-linkedin.svg"/>
+            <img class="twitter" src="./assets/images/icon-twitter.svg"/>
           </div>
         </li>
       </ul>
     </div>
 
-    <div class="new-line-container-skills"><div class="new-line"></div></div>
+    <div class="new-line-container-skills new-line-container-skills-mob"><div class="new-line new-line-mob"></div></div>
 
     <div class="skills-flex-background">
       <ul class="skills-flex">
-        <li class="col-4 col-tab-6 skill-flex-item" >
+        <li class="col-4 col-tab-6 col-mob-12 skill-flex-item" >
           <div class="row">
             <span class="skill-name">HTML</span></br>
             <span class="years">4 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 col-tab-6 skill-flex-item">
+        <li class="col-4 col-tab-6 col-mob-12 skill-flex-item">
           <div class="row">
             <span class="skill-name">CSS</span></br>
             <span class="years">4 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 col-tab-6 skill-flex-item" >
+        <li class="col-4 col-tab-6 col-mob-12 skill-flex-item" >
           <div class="row">
             <span class="skill-name">Javascript</span></br>
             <span class="years">4 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 col-tab-6 skill-flex-item" >
+        <li class="col-4 col-tab-6 col-mob-12 skill-flex-item" >
           <div class="row">
             <span class="skill-name">Accessibility</span></br>
             <span class="years">4 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 col-tab-6 skill-flex-item" >
+        <li class="col-4 col-tab-6 col-mob-12 skill-flex-item" >
           <div class="row">
             <span class="skill-name">React</span></br>
             <span class="years">3 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 col-tab-6 skill-flex-item"  >
+        <li class="col-4 col-tab-6 col-mob-12 skill-flex-item"  >
           <div class="row">
             <span class="skill-name">Sass</span></br>
             <span class="years">3 Years Experience</span>
@@ -702,6 +1085,8 @@
         </li>
       </ul>
     </div>
+
+    <div class="new-line-container-skills-mob"><div class="new-line-mob"></div></div>
 
     <ul class="projects-flex">
       <li class="col-6 project-flex-item-header">
@@ -711,87 +1096,87 @@
       <li class="col-6 project-flex-item-header">
         <div class="project-contactme"><span>CONTACT ME</span></div>
       </li>
-      <li class="col-6 project-flex-item-odd">
+      <li class="col-6 col-mob-12 project-flex-item-odd">
         <div>
           <img src="./assets/images/thumbnail-project-1-large.webp" width="450px" height="300px"/>
         </div>
         <div class="project-flex-item-description">
-          <div>Design portfolio</div>
-          <div><span>HTML   </span><span>CSS</span></div>
-          <div>
-            <span>View Project   </span>
-            <span>View Code</span>
+          <div class="project-name">DESIGN PORTFOLIO</div>
+          <div class="project-languages-used"><span>HTML   </span><span>CSS</span></div>
+          <div class="project-View-Project-Code">
+            <span class="project-view-project">VIEW PROJECT   </span>
+            <span class="project-view-code">VIEW CODE</span>
           </div>
         </div>
       </li>
       <li class="extra-empty"></li>
 
-      <li class="col-6 project-flex-item-even">
+      <li class="col-6 col-mob-12 project-flex-item-even">
         <div>
           <img src="./assets/images/thumbnail-project-2-large.webp" width="450px" height="300px"/>
         </div>
         <div class="project-flex-item-description">
-          <div>E-learning landing page</div>
-          <div><span>HTML   </span><span>CSS</span></div>
-          <div>
-            <span>View Project   </span>
-            <span>View Code</span>
+          <div class="project-name">E-LEARNING LANDING PAGE</div>
+          <div class="project-languages-used"><span>HTML   </span><span>CSS</span></div>
+          <div class="project-View-Project-Code">
+            <span class="project-view-project">VIEW PROJECT   </span>
+            <span class="project-view-code">VIEW CODE</span>
           </div>
         </div>
       </li>
-      <li class="col-6 project-flex-item-odd">
+      <li class="col-6 col-mob-12 project-flex-item-odd">
         <div>
           <img src="./assets/images/thumbnail-project-3-large.webp" width="450px" height="300px"/>
         </div>
         <div class="project-flex-item-description">
-          <div>Todo web app</div>
-          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-          <div>
-            <span>View Project   </span>
-            <span>View Code</span>
+          <div class="project-name">TODO WEB APP</div>
+          <div class="project-languages-used"><span>HTML   </span><span>CSS   </span><span>JAVASCRIPT</span></div>
+          <div class="project-View-Project-Code">
+            <span class="project-view-project">VIEW PROJECT   </span>
+            <span class="project-view-code">VIEW CODE</span>
           </div>
         </div>
       </li>
       <li class="extra-empty"></li>
 
-      <li class="col-6 project-flex-item-even">
+      <li class="col-6 col-mob-12 project-flex-item-even">
         <div>
           <img src="./assets/images/thumbnail-project-4-large.webp" width="450px" height="300px"/>
         </div>
         <div class="project-flex-item-description">
-          <div>Entertainment web app</div>
-          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-          <div>
-            <span>View Project   </span>
-            <span>View Code</span>
+          <div class="project-name">ENTERTAINMENT WEB APP</div>
+          <div class="project-languages-used"><span>HTML   </span><span>CSS   </span><span>JAVASCRIPT</span></div>
+          <div class="project-View-Project-Code">
+            <span class="project-view-project">VIEW PROJECT   </span>
+            <span class="project-view-code">VIEW CODE</span>
           </div>
         </div>
       </li>
-      <li class="col-6 project-flex-item-odd">
+      <li class="col-6 col-mob-12 project-flex-item-odd">
         <div>
           <img src="./assets/images/thumbnail-project-5-large.webp" width="450px" height="300px"/>
         </div>
         <div class="project-flex-item-description">
-          <div>Memory Game</div>
-          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-          <div>
-            <span>View Project   </span>
-            <span>View Code</span>
+          <div class="project-name">MEMORY GAME</div>
+          <div class="project-languages-used"><span>HTML   </span><span>CSS   </span><span>JAVASCRIPT</span></div>
+          <div class="project-View-Project-Code">
+            <span class="project-view-project">VIEW PROJECT   </span>
+            <span class="project-view-code">VIEW CODE</span>
           </div>
         </div>
       </li>
       <li class="extra-empty"></li>
 
-      <li class="col-6 project-flex-item-even">
+      <li class="col-6 col-mob-12 project-flex-item-even">
         <div>
           <img src="./assets/images/thumbnail-project-6-large.webp" width="450px" height="300px"/>
         </div>
         <div class="project-flex-item-description">
-          <div>Art gallery showcase</div>
-          <div><span>HTML   </span><span>CSS   </span><span>JavaScript</span></div>
-          <div>
-            <span>View Project   </span>
-            <span>View Code</span>
+          <div class="project-name">ART GALLERY SHOWCASE</div>
+          <div class="project-languages-used"><span>HTML   </span><span>CSS   </span><span>JAVASCRIPT</span></div>
+          <div class="project-View-Project-Code">
+            <span class="project-view-project">VIEW PROJECT   </span>
+            <span class="project-view-code">VIEW CODE</span>
           </div>
         </div>
       </li>
@@ -799,7 +1184,7 @@
 
     <div class="contact-flex">
       <ul class="contact-flex-ul">
-        <li class="col-6 col-tab-12 left">
+        <li class="col-6 col-tab-12 col-mob-12 left">
           <div class="contact-form">
             <div class="contact-heading">Contact</div>
             <div class="contact-description">
@@ -808,23 +1193,23 @@
             </div>
           </div> 
         </li>
-        <li class="col-6 col-tab-12 right">
+        <li class="col-6 col-tab-12 col-mob-12 right">
           <div class="contact-form">
-            <input class="form-name" placeholder="Name"/>
-            <input class="form-email" placeholder="Email"/>
-            <textarea class="form-message" placeholder="Message" rows="4" cols="50"></textarea>
+            <input class="form-name" placeholder="NAME"/>
+            <input class="form-email" placeholder="EMAIL"/>
+            <textarea class="form-message" placeholder="MESSAGE" rows="4" cols="50"></textarea>
             <div class="form-send-button-container"><button class="form-send-message">SEND MESSAGE</button></div>
           </div>
         </li>
       </ul>
     </div>
 
-    <div class="new-line-container"><div class="new-line"></div></div>
+    <div class="new-line-container new-line-container-skills-mob"><div class="new-line new-line-mob"></div></div>
 
     <div class="footer">
       <ul class="footer-margin">
-        <li class="col-6 footer-left">adamkeyes</li>
-        <li class="col-6 footer-right">
+        <li class="col-6 col-mob-12 footer-left">adamkeyes</li>
+        <li class="col-6 col-mob-12 footer-right">
           <div class="footer-logos">
             <img class="github" src="./assets/images/icon-github.svg" height="20px" width="20px"/>
             <img class="frontend" src="./assets/images/icon-frontend-mentor.svg" height="20px" width="20px"/>
