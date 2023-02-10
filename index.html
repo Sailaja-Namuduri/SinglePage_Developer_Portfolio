@@ -354,13 +354,279 @@
     body>div>.header-flex-background,body>div>.skills-flex,body>div>.projects-flex,body>div>.contact-flex,body>div>.footer{
       color: whitesmoke;
     }
+    /*For tablets*/
+    @media (max-width:768px) and (min-width:481px) {
+
+      .col-tab-1 {width: 8.33%;}
+      .col-tab-2 {width: 16.66%;}
+      .col-tab-3 {width: 25%;}
+      .col-tab-4 {width: 33.33%;}
+      .col-tab-5 {width: 41.66%;}
+      .col-tab-6 {width: 50%;}
+      .col-tab-7 {width: 58.33%;}
+      .col-tab-8 {width: 66.66%;}
+      .col-tab-9 {width: 75%;}
+      .col-tab-10 {width: 83.33%;}
+      .col-tab-11 {width: 91.66%;}
+      .col-tab-12 {width: 100%;}
+
+      .header-flex-background{
+      height: 450px;
+      background-image: url(./assets/images/pattern-rings.svg);
+      background-position: top 70px left -290px;
+      background-repeat: no-repeat;
+      
+    }
+    .header-flex{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      height: 90%;
+      list-style-type: none;
+      margin: 0px 0px;
+      position: relative;
+    }
+    .header-flex-item-left{
+      height: 100%;
+      font-size: 20px;
+      
+    }
+    .header-flex-item-left>div{
+      margin: 15px 0px;
+    }
+    .header-flex-item-left-description{
+      position: absolute;
+      top: 20%;
+      bottom: -4%;
+      left: 40px;
+      right: 0%;
+      text-align: center;
+      font-size: 18px;
+    }
+    .header-absolute-heading{
+      width: 550px;
+      font-weight: bolder;
+      font-size: 45px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+    .header-absolute-heading-Adam{
+      border-bottom: 1px solid aquamarine;
+      border-width: 2px;
+      letter-spacing: 1px;
+    }
+    .header-absolute-description{
+      font-size: 15px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      letter-spacing: 1px;
+      padding: 3% 0px;
+      width: 60%;
+      text-align: left;
+    }
+    .header-contact-and-circle{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+    }
+    .header-conAndCir-contactme{
+      display: flex;
+      align-items: bottom;
+      justify-content: bottom;
+      cursor: pointer;
+    }
+    .header-conAndCir-circle{
+      display: flex;
+      align-items: right;
+      justify-content: right;
+
+    }
+    .header-conatct-contactme{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      border-bottom: 1px solid aquamarine;
+      border-width: 2px;
+      position: absolute;
+      bottom: 0px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      padding-bottom: 2px;
+    }
+    .contact-circle{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+    .header-flex-item-right{
+      height: 100%;
+      background-image: url(./assets/images/image-profile-tablet.webp);
+      background-repeat: no-repeat;
+      background-size: 95% 100%;
+      background-position:  top 0% right 0%  ;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .header-logos-position{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 100%;
+      
+    }
+    .header-logos-position>img{
+      margin: 15px;
+    }
+    .skills-flex-background{
+      background-image: url(./assets/images/pattern-rings.svg);
+      background-position: bottom right -350px;
+      background-repeat: no-repeat;
+      height: 350px;
+    }
+    .skills-flex{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin: 0px 0px;
+      height: 90%;
+    }
+    .skill-flex-item{
+      height:35%;
+    }
+    .skill-flex-item>.row>.skill-name{
+      font-size: 200%;
+      font-weight: bold;
+      color: white;
+    }
+    .skill-flex-item>.row>.years{
+      font-size: 15px;
+      color: white;
+    }
+    .projects-flex{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;      
+      align-items: flex-start;
+      height: 1450px;
+      margin:0px 0px;
+    }
+    .contact-flex{
+      padding-top: 50px;
+      background: rgb(31, 30, 30);
+      background-image: url(./assets/images/pattern-rings.svg);
+      background-position: bottom left -350px;
+      background-repeat: no-repeat;
+    }
+    .contact-flex-ul{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top:20px;
+      list-style-type: none;
+      height: 500px;
+      margin: 0px 0px;
+      padding: 0;
+    }
+    
+   
+    .contact-flex-ul>.left{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .contact-flex-ul>.right{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .contact-heading{
+      font-size: 55px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    .contact-description{
+      letter-spacing: 0.35px;
+      font-size: 15px;
+      width: 100%;
+    }
+    .contact-form{
+      width: 75%;
+      
+    }
+    .form-name,.form-email,.form-message{
+      width: 80%;
+      padding: 18px 30px;
+      margin: 8px 0;
+      border: none;
+      border-bottom: 2px solid rgb(237, 230, 230);
+      background: rgb(31, 30, 30);
+    }
+    .form-send-button-container{
+      margin-top: 30px;
+      width: 75%;
+    }
+    .form-send-message{
+      width:140px;
+      border: none;
+      border-bottom: 1px solid aquamarine;
+      background: rgb(31, 30, 30);
+      color:rgb(237, 230, 230);
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
+    .new-line-container{
+      background: rgb(31, 30, 30);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .new-line-container-skills{
+      background: black;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .new-line{
+      border-bottom: 3px solid grey;
+      margin: 20px 100px;
+      width: 100%;
+    }
+    .footer-margin{
+      padding-bottom: 50px;
+      margin: 0px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+      list-style-type: none;
+    }
+    
+    }
   </style>
 </head>
 <body>
   <div class="wrapper">
     <div class="header-flex-background">
       <ul class="header-flex">
-        <li class="col-7 header-flex-item-left">
+        <li class="col-7 col-tab-7 header-flex-item-left">
           <div>
             <b>adamkeyes</b>
           </div>
@@ -383,7 +649,7 @@
             </div>
           </div>
         </li>
-        <li class="col-5 header-flex-item-right">
+        <li class="col-5 col-tab-5 header-flex-item-right">
           <div class="header-logos-position">
             <img class="github" src="./assets/images/icon-github.svg" height="5%" width="5%"/>
             <img class="frontend" src="./assets/images/icon-frontend-mentor.svg" height="5%" width="5%"/>
@@ -393,41 +659,42 @@
         </li>
       </ul>
     </div>
+
     <div class="new-line-container-skills"><div class="new-line"></div></div>
 
     <div class="skills-flex-background">
       <ul class="skills-flex">
-        <li class="col-4 skill-flex-item" >
+        <li class="col-4 col-tab-6 skill-flex-item" >
           <div class="row">
             <span class="skill-name">HTML</span></br>
             <span class="years">4 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 skill-flex-item">
+        <li class="col-4 col-tab-6 skill-flex-item">
           <div class="row">
             <span class="skill-name">CSS</span></br>
             <span class="years">4 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 skill-flex-item" >
+        <li class="col-4 col-tab-6 skill-flex-item" >
           <div class="row">
             <span class="skill-name">Javascript</span></br>
             <span class="years">4 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 skill-flex-item" >
+        <li class="col-4 col-tab-6 skill-flex-item" >
           <div class="row">
             <span class="skill-name">Accessibility</span></br>
             <span class="years">4 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 skill-flex-item" >
+        <li class="col-4 col-tab-6 skill-flex-item" >
           <div class="row">
             <span class="skill-name">React</span></br>
             <span class="years">3 Years Experience</span>
           </div>
         </li>
-        <li class="col-4 skill-flex-item"  >
+        <li class="col-4 col-tab-6 skill-flex-item"  >
           <div class="row">
             <span class="skill-name">Sass</span></br>
             <span class="years">3 Years Experience</span>
@@ -532,7 +799,7 @@
 
     <div class="contact-flex">
       <ul class="contact-flex-ul">
-        <li class="col-6 left">
+        <li class="col-6 col-tab-12 left">
           <div class="contact-form">
             <div class="contact-heading">Contact</div>
             <div class="contact-description">
@@ -541,7 +808,7 @@
             </div>
           </div> 
         </li>
-        <li class="col-6 right">
+        <li class="col-6 col-tab-12 right">
           <div class="contact-form">
             <input class="form-name" placeholder="Name"/>
             <input class="form-email" placeholder="Email"/>
