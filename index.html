@@ -10,10 +10,14 @@
   <style>
     
     * {
-    box-sizing: border-box;
+    margin: 0 0px;
+    padding: 0;
     font-family: 'Inter', sans-serif;
+    
   }
- 
+  html,body{
+    margin: 0 10px;
+  }
   
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -637,69 +641,68 @@
       .col-mob-10 {width: 83.33%;}
       .col-mob-11 {width: 91.66%;}
       .col-mob-12 {width: 100%;}
-
+      
+      html,body{
+        margin: 0;
+      }
+      
+      .wrapper{
+        text-align: center;
+      }
       .header-flex-background{
-      height: 1200px;
-      background-image: url(./assets/images/pattern-rings.svg),url(./assets/images/pattern-circle.svg);
-      background-position: top 200px left -250px, right -230px top 400px;
-      background-size: 600px,300px;
-      background-repeat: no-repeat;
-      width: 550px;
-      margin: 0px 10px;
-    }
+        height: 900px;
+        background-image: url(./assets/images/pattern-rings.svg),url(./assets/images/pattern-circle.svg);
+        background-position: top 200px left -400px, right -250px top 300px;
+        background-size: 600px,300px;
+        background-repeat: no-repeat;
+        margin: 0px 0px;
+      }
     
     .header-flex{
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
-      height: 70%;
+      height: 800px;
       list-style-type: none;
       margin: 0px 0px;
       position: relative;
+      padding-left: 0;
     }
     .header-flex-item-left{
       height: 10%;
-      
-      font-size: 50px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
+      font-size: 25px;
+      text-align: center;
     }
     .header-flex-item-left>div{
       margin: 15px 0px;
-      
     }
     .header-flex-item-left-description{
       position: absolute;
-      top: 90%;
-      bottom: -40%;
+      top: 70%;
+      bottom: -10%;
       left: 0px;
       right: 0%;
       text-align: center;
-      font-size: 18px;
-      
     }
     .header-absolute-heading{
-      width: 550px;
       font-weight: bolder;
-      font-size: 60px;
+      font-size: 35px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       letter-spacing: 1px;
-      text-align: left;
-      
+      text-align: center;
+      width: 100%;
     }
     .header-absolute-heading-Adam{
-      border-bottom: 1px solid aquamarine;
+      border-bottom: 2px solid aquamarine;
       border-width: 2px;
       letter-spacing: 1px;
     }
     .header-absolute-description{
-      font-size: 25px;
-      
+      font-size: 15px;
       text-align: center;
       letter-spacing: 1px;
       padding: 3% 0px;
@@ -708,19 +711,15 @@
       line-height: 50.5px;
     }
     .header-contact-and-circle{
-
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       
     }
     .header-conAndCir-contactme{
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       cursor: pointer;
     }
     .header-conAndCir-circle{
@@ -728,26 +727,23 @@
 
     }
     .header-conatct-contactme{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
       border-bottom: 1px solid aquamarine;
       border-width: 2px;
-      position: absolute;
       bottom: 0px;
-      font-size: 25px;
+      font-size: 15px;
       letter-spacing: 2px;
       padding-bottom: 2px;
     }
     
     .header-flex-item-right{
-      height: 70%;
+      height: 56%;
       width: 70%;
       background-image: url(./assets/images/image-profile-mobile.webp);
       background-repeat: no-repeat;
-      background-size: 350px 750px;  
+      background-size: 250px 600px;  
       background-position-x: 0px;
-      background-position-y: -160px;
+      background-position-y: -130px;
     }
     .header-logos-position{
       display: flex;
@@ -757,16 +753,15 @@
       
     }
     .header-logos-position>img{
-      margin: 30px;
-      width: 25%;
-      height: 25%;
+      margin: 10px;
+      width: 10%;
+      height: 10%;
     }
     .skills-flex-background{
       background-image: url(./assets/images/pattern-rings.svg);
       background-position: bottom -70px right -350px;
       background-repeat: no-repeat;
       height: 850px;
-      width: 550px;
       text-align: center;
     }
     .skills-flex{
@@ -778,6 +773,7 @@
       margin: 0px 0px;
       height: 100%;
       width: 100%;
+      padding-left: 0;
     }
     .skill-flex-item{
       height:15%;
@@ -793,7 +789,7 @@
       color: white;
     }
     .new-line-container-skills-mob{
-      width: 160%;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -809,8 +805,7 @@
       flex-wrap: wrap;
       flex-direction: row;      
       align-items: flex-start;
-      height: 4200px;
-      width: 550px;
+      height: 3500px;
       margin:80px 0px;
       padding-left: 0;
     }
@@ -821,7 +816,7 @@
       margin-bottom: 0px;
     }
     .project-heading{
-      font-size: 55px;
+      font-size: 45px;
       width: 100%;
       
     }
@@ -829,58 +824,61 @@
       display: flex;
       justify-content: right;
       align-items: end;
-      padding-top: 25px;
+      padding-top: 18px;
       width: 100%;
       
     }
     .project-contactme>span{
       font-size: 20px;
-      letter-spacing: 2px;
+      letter-spacing: 0.5px;
       border-bottom: 2px solid aquamarine;
       padding-bottom: 10px;
       cursor: pointer;
     }
     .project-flex-item-odd{
       list-style-type: none;
-      height: 620px;
+      height: 480px;
       display: flex;
       justify-content: left;
       align-items:left;
       flex-direction: column;
-      width: 550px;;
     }
     .project-flex-item-even{
       list-style-type: none;
-      height: 620px;
+      height: 480px;
       display: flex;
       justify-content: right;
       align-items:right;
       flex-direction: column;
-      width: 550px;
     }
     .project-flex-item-even>div>img{
-      width: 100%;
-      height: 100%;
+      width: 99%;
+      height: 99%;
     }
     .project-flex-item-odd>div>img{
-      width: 100%;
-      height: 100%;
+      width: 99%;
+      height: 99%;
     }
     .project-flex-item-description{
+      margin-left: 10px;
+      margin-right: 10px;
       margin-top: 21px;
       line-height: 65PX;
+      text-align: left;
     }
     .project-name{
-      font-size: 35px;
+      font-size: 25px;
+      font-weight: bolder;
       letter-spacing: 0.5px;
     }
     .project-languages-used{
-      font-size: 25px;
+      font-size: 22px;
     }
     .project-View-Project-Code>span{
-      margin-right: 50px;
-      font-size: 25px;
-      letter-spacing: 1px;
+      margin-right: 20px;
+      font-size: 18px;
+      font-weight: bolder;
+      letter-spacing: 0.2px;
     }
     .project-view-project{
       border-bottom: 2px solid aquamarine;
@@ -892,22 +890,17 @@
       padding-bottom: 10px;
       cursor: pointer;
     }
-    
-
     .extra-empty{
       list-style-type: none;
       width:0%;
     }
-    
     .contact-flex{
       padding-top: 50px;
       background: rgb(31, 30, 30);
       background-image: url(./assets/images/pattern-rings.svg);
       background-position: bottom 50px left -330px;
       background-repeat: no-repeat;
-      width: 550px;
       text-align: center;
-
     }
     .contact-flex-ul{
       display: flex;
@@ -925,7 +918,6 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      width: 100%;
     }
     .contact-flex-ul>.right{
       display: flex;
@@ -946,36 +938,31 @@
     .contact-form{
       width: 100%;
     }
+
     .form-name,.form-email,.form-message{
       font-size: 25px;
-      width: 100%;
       padding: 18px 30px;
       margin: 8px 0;
-      border: none;
       border-bottom: 2px solid rgb(237, 230, 230);
       background: rgb(31, 30, 30);
+      width: 70%;
     }
     .form-send-button-container{
       margin-top: 30px;
-      width: 100%;
+      margin-right: 30px;
     }
     .form-send-message{
-      width:200px;
       border: none;
       border-bottom: 2px solid aquamarine;
       background: rgb(31, 30, 30);
       color:rgb(237, 230, 230);
       cursor: pointer;
       letter-spacing: 2px;
-      font-size: 21px;
+      font-size: 14px;
       padding-bottom: 10px;
-    }
-    
-    
+    } 
     .footer{
       background: rgb(31, 30, 30);
-      width: 550px;
-
     }
     .footer-margin{
       padding-bottom: 50px;
@@ -1008,7 +995,7 @@
   </style>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="col-12 col-tab-12 wrapper">
     <div class="header-flex-background header-flex-background-mobile">
       <ul class="header-flex">
         <li class="col-7 col-tab-7 header-flex-item-left">
